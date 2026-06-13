@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Northstar Learning — Printable Worksheets for Every Grade, K–12</title>
+<meta name="description" content="No-prep printable worksheet packs for math, English, science, and puzzles. Every grade K–12, answer keys included. For parents, teachers, and homeschoolers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1f2d4d; --navy-deep:#141f38; --gold:#ffc24d; --gold-deep:#e8a52c;
+    --paper:#fbf7ef; --cream:#f3ecdd; --ink:#26303f; --slate:#5d6781; --white:#fff;
+    --shadow:0 14px 40px -18px rgba(20,31,56,.35);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Figtree',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.08;letter-spacing:-.01em;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px;}
+  .eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep);}
+  .dotrule{height:0;border-top:2px dotted var(--gold);opacity:.7;}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;gap:.5em;font-weight:700;font-size:.98rem;padding:.85em 1.5em;border-radius:999px;cursor:pointer;border:2px solid transparent;transition:transform .18s ease, box-shadow .18s ease, background .18s;}
+  .btn-gold{background:var(--gold);color:var(--navy);}
+  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 24px -8px rgba(255,194,77,.7);}
+  .btn-ghost{background:transparent;color:var(--white);border-color:rgba(255,255,255,.35);}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px);}
+  .btn-navy{background:var(--navy);color:var(--white);}
+  .btn-navy:hover{transform:translateY(-2px);box-shadow:var(--shadow);background:#26365c;}
+
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(251,247,239,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(31,45,77,.08);}
+  .nav-in{display:flex;align-items:center;gap:18px;height:68px;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem;color:var(--navy);}
+  .brand .tile{width:38px;height:38px;border-radius:9px;background:var(--navy);display:grid;place-items:center;flex-shrink:0;}
+  .nav-links{margin-left:auto;display:flex;align-items:center;gap:28px;}
+  .nav-links a.lnk{font-weight:600;font-size:.95rem;color:var(--slate);transition:color .15s;}
+  .nav-links a.lnk:hover{color:var(--navy);}
+  .menu-btn{display:none;margin-left:auto;background:none;border:0;cursor:pointer;}
+
+  /* hero */
+  .hero{position:relative;background:radial-gradient(140% 120% at 70% 0%, #233357 0%, var(--navy) 45%, var(--navy-deep) 100%);color:var(--white);overflow:hidden;}
+  .stars{position:absolute;inset:0;pointer-events:none;}
+  .stars i{position:absolute;background:#fff;border-radius:50%;opacity:.5;animation:tw 4s ease-in-out infinite;}
+  @keyframes tw{0%,100%{opacity:.18;}50%{opacity:.8;}}
+  .hero-in{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:84px 0 96px;}
+  .hero h1{font-size:clamp(2.5rem,5.4vw,4.2rem);font-weight:600;color:#fff;margin:.35em 0 .45em;}
+  .hero h1 em{font-style:italic;color:var(--gold);}
+  .hero p.lead{font-size:1.15rem;color:#cdd6e6;max-width:30em;margin-bottom:1.9em;}
+  .hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;}
+  .hero-art{display:grid;place-items:center;}
+  .bigstar{width:min(330px,80%);filter:drop-shadow(0 0 50px rgba(255,194,77,.45));animation:float 6s ease-in-out infinite;}
+  @keyframes float{0%,100%{transform:translateY(0) rotate(0);}50%{transform:translateY(-14px) rotate(2deg);}}
+  .hero-stats{display:flex;gap:30px;margin-top:36px;border-top:1px solid rgba(255,255,255,.12);padding-top:22px;}
+  .hero-stats div b{font-family:'Fraunces',serif;font-size:1.7rem;color:var(--gold);display:block;}
+  .hero-stats div span{font-size:.82rem;color:#aab6cc;}
+
+  /* value strip */
+  .values{background:var(--cream);}
+  .values-in{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:30px 0;}
+  .val{display:flex;gap:12px;align-items:flex-start;}
+  .val svg{flex-shrink:0;margin-top:2px;}
+  .val b{display:block;font-size:.98rem;color:var(--navy);}
+  .val span{font-size:.85rem;color:var(--slate);}
+
+  /* sections */
+  section.block{padding:80px 0;}
+  .head{max-width:40em;margin-bottom:38px;}
+  .head h2{font-size:clamp(2rem,3.6vw,2.9rem);font-weight:600;color:var(--navy);margin:.25em 0 .35em;}
+  .head p{color:var(--slate);font-size:1.08rem;}
+
+  /* subject cards */
+  .grid-sub{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .card{background:var(--white);border:1px solid rgba(31,45,77,.09);border-radius:18px;padding:28px;box-shadow:var(--shadow);transition:transform .2s ease;display:flex;flex-direction:column;}
+  .card:hover{transform:translateY(-4px);}
+  .card .ico{width:46px;height:46px;border-radius:11px;background:var(--cream);display:grid;place-items:center;margin-bottom:16px;}
+  .card h3{font-size:1.45rem;color:var(--navy);font-weight:600;}
+  .card .sub-line{height:0;border-top:2px dotted var(--gold);width:54px;margin:12px 0 14px;}
+  .card p{color:var(--slate);font-size:.97rem;flex:1;}
+  .card .row{display:flex;align-items:center;justify-content:space-between;margin-top:20px;gap:12px;}
+  .price{font-family:'Figtree';font-weight:700;color:var(--navy);background:#fff;border:2px dashed var(--gold);border-radius:9px;padding:5px 12px;font-size:.95rem;white-space:nowrap;}
+  .price small{font-weight:500;color:var(--slate);}
+
+  /* bundles */
+  .bundles{background:var(--navy);color:#fff;}
+  .bundles .head h2{color:#fff;} .bundles .head p{color:#bcc6db;}
+  .grid-bun{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .bun{background:#26365c;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:8px;}
+  .bun h3{font-size:1.2rem;color:#fff;font-weight:600;}
+  .bun p{color:#aeb9d2;font-size:.9rem;flex:1;}
+  .bun .price{background:transparent;border-color:var(--gold);color:var(--gold);align-self:flex-start;margin-top:6px;}
+  .bun .btn{margin-top:14px;width:100%;justify-content:center;}
+  .bun.feature{grid-column:span 3;background:linear-gradient(110deg,#2b3f6e,#1c2a4b);border:1.5px solid var(--gold);display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px;}
+  .bun.feature .left h3{font-size:1.7rem;}
+  .bun.feature .badge{display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;padding:4px 11px;border-radius:999px;margin-bottom:10px;}
+  .bun.feature .right{text-align:right;display:flex;flex-direction:column;gap:12px;align-items:flex-end;}
+  .bun.feature .bigprice{font-family:'Fraunces',serif;font-size:2.6rem;color:var(--gold);line-height:1;}
+
+  /* free sample */
+  .free{background:var(--cream);text-align:center;}
+  .free .inner{max-width:34em;margin:0 auto;}
+  .free h2{font-size:clamp(2rem,3.6vw,2.7rem);color:var(--navy);font-weight:600;margin-bottom:.4em;}
+  .free p{color:var(--slate);font-size:1.08rem;margin-bottom:1.6em;}
+
+  /* why */
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:14px;}
+  .why .item h3{font-size:1.15rem;color:var(--navy);margin-bottom:6px;display:flex;align-items:center;gap:8px;}
+  .why .item p{color:var(--slate);font-size:.95rem;}
+
+  /* footer */
+  footer{background:var(--navy-deep);color:#aeb9d2;padding:54px 0 30px;}
+  .foot-in{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start;}
+  .foot-brand{display:flex;align-items:center;gap:10px;color:#fff;font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;margin-bottom:10px;}
+  .foot-note{font-size:.82rem;color:#7b88a6;max-width:30em;margin-top:14px;}
+  .foot-links{display:flex;gap:40px;flex-wrap:wrap;}
+  .foot-links h4{color:#fff;font-family:'Figtree';font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px;}
+  .foot-links a{display:block;color:#aeb9d2;font-size:.92rem;margin-bottom:8px;transition:color .15s;}
+  .foot-links a:hover{color:var(--gold);}
+  .copy{border-top:1px solid rgba(255,255,255,.08);margin-top:36px;padding-top:20px;font-size:.82rem;color:#6b7794;text-align:center;}
+
+  /* reveal */
+  .rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease, transform .6s ease;}
+  .rv.in{opacity:1;transform:none;}
+
+  @media (max-width:880px){
+    .hero-in{grid-template-columns:1fr;text-align:center;padding:60px 0 70px;}
+    .hero .cta-row{justify-content:center;} .hero p.lead{margin-left:auto;margin-right:auto;}
+    .hero-art{order:-1;} .bigstar{width:200px;} .hero-stats{justify-content:center;}
+    .values-in{grid-template-columns:repeat(2,1fr);}
+    .grid-sub{grid-template-columns:1fr;}
+    .grid-bun{grid-template-columns:1fr;} .bun.feature{grid-column:span 1;grid-template-columns:1fr;text-align:left;}
+    .bun.feature .right{text-align:left;align-items:flex-start;}
+    .why-grid{grid-template-columns:1fr;}
+    .nav-links{display:none;} .menu-btn{display:block;}
+    .nav-links.open{display:flex;position:absolute;top:68px;left:0;right:0;flex-direction:column;background:var(--paper);padding:18px 24px;gap:16px;border-bottom:1px solid rgba(0,0,0,.08);}
+    .nav-links.open .btn{width:100%;justify-content:center;}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;}}
+</style>
+<script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+</head>
+<body>
+
+<!-- ====== NAV ====== -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand">
+      <span class="tile"><svg width="22" height="22" viewBox="0 0 200 200"><path d="M100,38 L114.1,85.9 L162,100 L114.1,114.1 L100,162 L85.9,114.1 L38,100 L85.9,85.9 Z" fill="#FFC24D"/></svg></span>
+      Northstar
+    </a>
+    <nav class="nav-links" id="navlinks">
+      <a class="lnk" href="#catalog">Subjects</a>
+      <a class="lnk" href="#bundles">Bundles</a>
+      <a class="lnk" href="#free">Free sample</a>
+      <a class="btn btn-navy" href="#catalog">Browse the shop</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1f2d4d" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  </div>
+</header>
+
+<!-- ====== HERO ====== -->
+<section class="hero" id="top">
+  <div class="stars" id="stars"></div>
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <span class="eyebrow" style="color:var(--gold)">Math · English · Science · Puzzles</span>
+      <h1>Worksheets for <em>every</em> subject, K&ndash;12.</h1>
+      <p class="lead">No-prep, print-and-go practice packs — each one with a full answer key. Made for parents, teachers, and homeschoolers who'd rather press print than spend the night making worksheets.</p>
+      <div class="cta-row">
+        <a href="#catalog" class="btn btn-gold">Browse the catalog</a>
+        <a href="#free" class="btn btn-ghost">Get a free sample</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>25+</b><span>worksheet packs</span></div>
+        <div><b>K&ndash;12</b><span>every grade</span></div>
+        <div><b>$1.99</b><span>packs start at</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg class="bigstar" viewBox="0 0 200 200"><path d="M100,20 L118.4,81.6 L180,100 L118.4,118.4 L100,180 L81.6,118.4 L20,100 L81.6,81.6 Z" fill="#FFC24D" stroke="#e8a52c" stroke-width="3" stroke-linejoin="round"/><path d="M150,37 L154.2,50.8 L168,55 L154.2,59.2 L150,73 L145.8,59.2 L132,55 L145.8,50.8 Z" fill="#ffffff"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ====== VALUES ====== -->
+<div class="values">
+  <div class="wrap values-in">
+    <div class="val"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8a52c" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg><div><b>Print &amp; go</b><span>Zero prep, zero setup</span></div></div>
+    <div class="val"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8a52c" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><div><b>Answer keys</b><span>Included in every pack</span></div></div>
+    <div class="val"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8a52c" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><div><b>Instant download</b><span>PDF, ready to print</span></div></div>
+    <div class="val"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8a52c" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg><div><b>K&ndash;12 coverage</b><span>Every grade, four subjects</span></div></div>
+  </div>
+</div>
+
+<!-- ====== CATALOG ====== -->
+<section class="block" id="catalog">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">The catalog</span>
+      <h2>Pick a subject.</h2>
+      <p>Every subject runs the full range — friendly and playful for the little ones, clean and grown-up for high school. Single packs start at $1.99.</p>
+    </div>
+    <div class="grid-sub">
+      <div class="card rv">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f2d4d" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="13" y2="16"/></svg></div>
+        <h3>Math</h3><div class="sub-line"></div>
+        <p>Counting and adding all the way to algebra, geometry, and intro calculus. 13 grade packs, K through 12 — every answer key computed and checked.</p>
+        <div class="row"><span class="price">from <small>$</small>1.99</span><a href="#bundles" class="btn btn-navy">View bundles</a></div>
+      </div>
+      <div class="card rv">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f2d4d" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+        <h3>English</h3><div class="sub-line"></div>
+        <p>From first sounds and sight words up through grammar, vocabulary, and literary devices. Four level packs spanning K–2 to 9–12.</p>
+        <div class="row"><span class="price">from <small>$</small>1.99</span><a href="#bundles" class="btn btn-navy">View bundles</a></div>
+      </div>
+      <div class="card rv">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f2d4d" stroke-width="1.8"><path d="M9 3v6l-5 9a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-5-9V3"/><line x1="8" y1="3" x2="16" y2="3"/></svg></div>
+        <h3>Science</h3><div class="sub-line"></div>
+        <p>Living things and the five senses through cells, ecosystems, genetics, chemistry, and physics. Four level packs, K–2 to 9–12.</p>
+        <div class="row"><span class="price">from <small>$</small>1.99</span><a href="#bundles" class="btn btn-navy">View bundles</a></div>
+      </div>
+      <div class="card rv">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f2d4d" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <h3>Word Searches</h3><div class="sub-line"></div>
+        <p>Animals, outer space, ocean, and sports — themed puzzle packs with answer keys. Screen-free fun for kids and grown-ups alike.</p>
+        <div class="row"><span class="price">from <small>$</small>1.99</span><a href="#bundles" class="btn btn-navy">View bundles</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== BUNDLES ====== -->
+<section class="block bundles" id="bundles">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow" style="color:var(--gold)">Best value</span>
+      <h2>Save with a bundle.</h2>
+      <p>Grab a whole subject — or the entire store — in one download. The more you bundle, the more you save.</p>
+    </div>
+    <div class="grid-bun">
+      <div class="bun rv"><h3>Math Mega Bundle</h3><p>All 13 math packs, Kindergarten through Grade 12. 100+ worksheets with answer keys.</p><span class="price">$19.99</span><a href="#" class="btn btn-gold buy" data-key="mathMega">Get the bundle</a></div>
+      <div class="bun rv"><h3>English K–12</h3><p>All four English packs — phonics through literary analysis.</p><span class="price">$8.99</span><a href="#" class="btn btn-gold buy" data-key="englishBundle">Get the bundle</a></div>
+      <div class="bun rv"><h3>Science K–12</h3><p>All four science packs — living things through chemistry &amp; physics.</p><span class="price">$8.99</span><a href="#" class="btn btn-gold buy" data-key="scienceBundle">Get the bundle</a></div>
+      <div class="bun rv"><h3>Word Search 4-Pack</h3><p>Animals, space, ocean &amp; sports — 24 puzzles in all.</p><span class="price">$8.99</span><a href="#" class="btn btn-gold buy" data-key="wsBundle">Get the bundle</a></div>
+      <div class="bun rv"><h3>Math K–5</h3><p>The full elementary math set, six grade packs.</p><span class="price">$9.99</span><a href="#" class="btn btn-gold buy" data-key="mathK5">Get the bundle</a></div>
+      <div class="bun rv"><h3>Math 9–12</h3><p>Algebra I, Geometry, Algebra II &amp; Pre-Calc.</p><span class="price">$7.99</span><a href="#" class="btn btn-gold buy" data-key="math912">Get the bundle</a></div>
+      <div class="bun feature rv">
+        <div class="left">
+          <span class="badge">★ Best value</span>
+          <h3>The Everything Bundle</h3>
+          <p>Every pack we make — all 25, across math, English, science, and puzzles, every grade K–12. 200+ worksheets with answer keys. The whole store, one download.</p>
+        </div>
+        <div class="right">
+          <span class="bigprice">$38.99</span>
+          <a href="#" class="btn btn-gold buy" data-key="everything">Get everything</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FREE SAMPLE ====== -->
+<section class="block free" id="free">
+  <div class="wrap inner rv">
+    <span class="eyebrow">Try before you buy</span>
+    <h2>Grab a free sample.</h2>
+    <p>Want to see the quality first? Download a free worksheet — no strings — and see exactly what you're getting before you spend a cent.</p>
+    <a href="#" class="btn btn-navy buy" data-key="freeSample">Download free sample</a>
+  </div>
+</section>
+
+<!-- ====== WHY ====== -->
+<section class="block why">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Why Northstar</span>
+      <h2>Built to actually help.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="item rv"><h3>Answer keys, always</h3><p>Every pack ships with a complete answer key, so checking work takes seconds — not a calculator and crossed fingers.</p></div>
+      <div class="item rv"><h3>Right for the age</h3><p>Playful and colorful for the little ones, clean and serious for high school. Each pack fits the grade it's made for.</p></div>
+      <div class="item rv"><h3>Print as much as you want</h3><p>One download, unlimited prints. Use it for one kid or a whole classroom, this year and next.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="wrap foot-in">
+    <div>
+      <div class="foot-brand"><span class="tile" style="width:34px;height:34px;border-radius:8px;background:#1f2d4d;display:grid;place-items:center"><svg width="20" height="20" viewBox="0 0 200 200"><path d="M100,38 L114.1,85.9 L162,100 L114.1,114.1 L100,162 L85.9,114.1 L38,100 L85.9,85.9 Z" fill="#FFC24D"/></svg></span>Northstar Learning</div>
+      <p style="color:#9aa6c2;max-width:24em;font-size:.95rem">Printable worksheets for every subject, K–12. Made for parents, teachers, and homeschoolers.</p>
+      <p class="foot-note">Instant digital downloads (PDF, US Letter). For personal &amp; single-classroom use only — please don't resell or redistribute.</p>
+    </div>
+    <div class="foot-links">
+      <div>
+        <h4>Shop</h4>
+        <a href="#catalog">Math</a><a href="#catalog">English</a><a href="#catalog">Science</a><a href="#catalog">Word Searches</a>
+      </div>
+      <div>
+        <h4>More</h4>
+        <a href="#bundles">Bundles</a><a href="#free">Free sample</a>
+        <a href="#catalog">Browse the catalog</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap copy">© <span id="yr"></span> Northstar Learning · Worksheets for every grade.</div>
+</footer>
+
+<script>
+  /* =========================================================
+     1) SET YOUR STORE LINK HERE  ← change this one line
+     Replace with your Payhip store URL, e.g. "https://payhip.com/NorthstarLearning"
+     Every "Buy / Shop / View" button will point here.
+     (Later, you can give individual buttons their own product link
+      by adding   data-link="https://payhip.com/b/XXXXX"   to that button.)
+  ========================================================= */
+  /* Fallback store link (used only until you fill in product keys below) */
+  const STORE_URL = "https://payhip.com/YOURSTORENAME";
+
+  /* =========================================================
+     PASTE YOUR PAYHIP PRODUCT KEYS HERE.
+     Each product on Payhip has a link like  payhip.com/b/AbC12
+     The key is the part after /b/  (here: "AbC12").
+     Replace each "REPLACE" below. That's the ONLY editing needed.
+     Buttons then open Payhip checkout in a popup ON THIS SITE.
+  ========================================================= */
+  const PRODUCTS = {
+    freeSample:     "REPLACE",
+    mathMega:       "REPLACE",
+    mathK5:         "REPLACE",
+    math912:        "REPLACE",
+    englishBundle:  "REPLACE",
+    scienceBundle:  "REPLACE",
+    wsBundle:       "REPLACE",
+    everything:     "REPLACE"
+  };
+
+  document.querySelectorAll('.buy').forEach(function(b){
+    b.setAttribute('href','#');
+    b.addEventListener('click', function(e){
+      e.preventDefault();
+      var key = PRODUCTS[b.dataset.key];
+      if(key && key !== "REPLACE" && window.Payhip && Payhip.Checkout){
+        Payhip.Checkout.open({ product: key });   /* popup on your own site */
+      } else {
+        window.open(STORE_URL, '_blank');          /* fallback before keys are set */
+      }
+    });
+  });
+
+  /* year */
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* starfield */
+  (function(){
+    const s=document.getElementById('stars'); if(!s) return;
+    let html='';
+    for(let i=0;i<70;i++){
+      const sz=Math.random()*2.4+0.6, x=Math.random()*100, y=Math.random()*100, d=(Math.random()*4).toFixed(2);
+      html+=`<i style="width:${sz}px;height:${sz}px;left:${x}%;top:${y}%;animation-delay:${d}s"></i>`;
+    }
+    s.innerHTML=html;
+  })();
+
+  /* mobile menu */
+  const mb=document.getElementById('menuBtn'), nl=document.getElementById('navlinks');
+  mb.addEventListener('click',()=>nl.classList.toggle('open'));
+  nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nl.classList.remove('open')));
+
+  /* scroll reveal */
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
